@@ -1,28 +1,13 @@
 package mariokart;
 
-public class MarioKart {
-
-    public static void main(String[] args) {
-        
-        Kart carro = new Kart();
-        carro.nome = "Mario";
-        carro.motor.cilindradas = 150;
-        carro.motor.velocidadeMaxima = 150.0;
-        
-        Piloto p1 = new Piloto;
-        p1.nome = "Mario";
-        p1.vilao = false;
-        
-        carro.novopiloto = p1;
-        
-        Piloto p2 = new Piloto;
-        p2.nome = "Yoshi";
-        p2.vilao = true;
-        
-        carro.novopiloto = p2;
-        
-        p1.pular;
-        p2.soltaSuperPoder();
-    }
+public class Piloto {
     
+    String nome;
+    boolean vilao;
+    
+    void soltaSuperPoder(){
+        if(vilao==true){
+            System.out.println("O piloto"+ nome+ " soltou um Super Poder");
+        }
+    }
 }
