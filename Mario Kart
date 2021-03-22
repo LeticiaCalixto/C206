@@ -1,8 +1,24 @@
 package mariokart;
 
-public class Motor {
+public class Kart {
     
-    String cilindradas;
-    float velocidadeMaxima;
+    // ATRIBUTOS EXPLICITOS
+    String nome;
+    
+    // ATRIBUTO IMPLICITO DA COMPOSICAO
+    Motor motor = new Motor();
+    Piloto novopiloto;
+    
+    void pular(){
+        System.out.println("O "+ nome+" pulou.");
+    }
+    
+    void soltarTurbo(){
+        System.out.println("O "+ nome+" ativou o turbo.");
+    }
+    
+    void fazerDrift(){
+        System.out.println("O "+ nome+" fez um drift.");
+    }
     
 }
