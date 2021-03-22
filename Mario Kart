@@ -1,13 +1,8 @@
 package mariokart;
 
-public class Piloto {
+public class Motor {
     
-    String nome;
-    boolean vilao;
+    String cilindradas;
+    float velocidadeMaxima;
     
-    void soltaSuperPoder(){
-        if(vilao==true){
-            System.out.println("O piloto"+ nome+ " soltou um Super Poder");
-        }
-    }
 }
